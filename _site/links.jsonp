@@ -1,0 +1,78 @@
+callback([
+
+  {
+    "text": "Post with Large Feature Image and Text",
+    "href": "/sample-posts/readability-feature-post"
+  } ,
+
+  {
+    "text": "Installing Jekyll on Windows",
+    "href": "/theme-setup/installing-jekyll-on-windows"
+  } ,
+
+  {
+    "text": "Testing Readability with a Bunch of Text",
+    "href": "/sample-posts/readability-post"
+  } ,
+
+  {
+    "text": "A Post with Images",
+    "href": "/photos/sample-post-images"
+  } ,
+
+  {
+    "text": "Syntax Highlighting Post",
+    "href": "/sample-posts/code-highlighting-post"
+  } ,
+
+  {
+    "text": "Sample Link Post",
+    "href": "/sample-posts/sample-link-post"
+  } ,
+
+  {
+    "text": "Sample Mathjax Post",
+    "href": "/sample-posts/sample-mathjax-post"
+  } ,
+
+  {
+    "text": "Fancy Some Columns?",
+    "href": "/sample-posts/fancy-columns"
+  } ,
+
+  {
+    "text": "A Post with a Video",
+    "href": "/videos/video-post"
+  } ,
+
+  {
+    "text": "Sample Quotation Post",
+    "href": "/sample-posts/a-quotation"
+  } ,
+
+  {
+    "text": "Sample Gallery Post",
+    "href": "/photos/sample-gallery-post"
+  } ,
+
+  {
+    "text": "Theme Elements",
+    "href": "/theme-setup/theme-elements"
+  } ,
+
+  {
+    "text": "Sample Status Post",
+    "href": "/sample-posts/a-status"
+  } ,
+
+  {
+    "text": "ABOUT HMFAYSAL OMEGA",
+    "href": "/theme-setup/about-hmfaysal-omega"
+  } ,
+
+  {
+    "text": "First Commit",
+    "href": "/personal/first-commit"
+  } 
+
+])

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     
+    <url>
+        <loc>/</loc>
+    </url> 
+    <url>
+        <loc>/documentation</loc>
+    </url> 
+    <url>
+        <loc>/categories</loc>
+    </url> 
+    <url>
+        <loc>/tags</loc>
+    </url> 
+    <url>
+        <loc>/hossain-mohd-faysal</loc>
+    </url>
+    
+    
+    <url>
+        <loc>/personal/first-commit</loc>
+    </url>
+    
+    <url>
+        <loc>/theme-setup/about-hmfaysal-omega</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/a-status</loc>
+    </url>
+    
+    <url>
+        <loc>/theme-setup/theme-elements</loc>
+    </url>
+    
+    <url>
+        <loc>/photos/sample-gallery-post</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/a-quotation</loc>
+    </url>
+    
+    <url>
+        <loc>/videos/video-post</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/fancy-columns</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/sample-mathjax-post</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/sample-link-post</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/code-highlighting-post</loc>
+    </url>
+    
+    <url>
+        <loc>/photos/sample-post-images</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/readability-post</loc>
+    </url>
+    
+    <url>
+        <loc>/theme-setup/installing-jekyll-on-windows</loc>
+    </url>
+    
+    <url>
+        <loc>/sample-posts/readability-feature-post</loc>
+    </url>
+    
+</urlset>
