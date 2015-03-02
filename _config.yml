@@ -1,5 +1,5 @@
-title:            Way of the coder - コーダの道
-description:      "コーダの道 (Kōda no michi)"
+title:            Way of the coder
+description:      "Zen in the software world"
 logo:             omikron.png
 #disqus_shortname: hmfaysal
 # Assign a default image for your site's header and footer
@@ -26,9 +26,9 @@ owner:
   avatar:         hmfaysal.jpg
   email:          romaninz@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Hossain Mohammad Faysal is an Electrical Engineer and a Mathematician based in Doha, Qatar. His interests are anything that&#8217;s related to math, from math itself to programming languages to music to physics to engineering to philosophy.
+  description:    My name is Gianluca Romanin and I'm a passionate software engineer. I'm the lucky dad of two wonderful daughters and I share my life with my animal activist wife.
   # Social networking links used in footer. Update and remove as you like.
-  twitter:
+  twitter:        j_zar21
   facebook:
   github:         JayZar21
   stackexchange:

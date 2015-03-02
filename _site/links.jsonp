@@ -1,3 +1,8 @@
 callback([
 
+  {
+    "text": "The Way",
+    "href": "/personal/the-way"
+  } 
+
 ])
