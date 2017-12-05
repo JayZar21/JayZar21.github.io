@@ -218,8 +218,8 @@ Description: Awesome dude, awesome life
   <li><a href="http://jekyllrb.com">Install Jekyll</a> and read through <a href="http://localhost:4000/theme-setup/installing-jekyll-on-windows/">this installation instructions</a> if you haven’t already.</li>
   <li>Fork the <a href="https://github.com/hmfaysal/hmfaysal-omega-theme/fork">HMFAYSAL OMEGA Theme repo</a></li>
   <li>Clone the repo you just forked.</li>
-  <li>Edit <code>_config.yml</code> to personalize your site.</li>
-  <li>Check out the sample posts in <code>_posts</code> to see examples for quotation posts, status posts, pulling in feature images wrap, assigning categories and tags, and other YAML data.</li>
+  <li>Edit <code class="highlighter-rouge">_config.yml</code> to personalize your site.</li>
+  <li>Check out the sample posts in <code class="highlighter-rouge">_posts</code> to see examples for quotation posts, status posts, pulling in feature images wrap, assigning categories and tags, and other YAML data.</li>
   <li>Read the documentation below for further customization pointers and documentation.
 <br />
 <br /></li>
@@ -228,101 +228,101 @@ Description: Awesome dude, awesome life
 <div class="span7 text-center"><a href="https://github.com/hmfaysal/hmfaysal-omega-theme/archive/master.zip" class="btn btn-success btn-large"><i class="icon-download-alt"></i> Download the Theme</a></div>
 <p><br /></p>
 
-<p class="notice"><strong>Pro-tip:</strong> Delete the <code>gh-pages</code> branch after cloning and start fresh by branching off <code>master</code>. There is a bunch of garbage in <code>gh-pages</code> used for the theme’s demo site that I’m guessing you don’t want on your site.</p>
+<p class="notice"><strong>Pro-tip:</strong> Delete the <code class="highlighter-rouge">gh-pages</code> branch after cloning and start fresh by branching off <code class="highlighter-rouge">master</code>. There is a bunch of garbage in <code class="highlighter-rouge">gh-pages</code> used for the theme’s demo site that I’m guessing you don’t want on your site.</p>
 
 <hr />
 
 <h2 id="setup-for-an-existing-jekyll-site">Setup for an Existing Jekyll site</h2>
 
 <ol>
-  <li>Clone the following folders: <code>_includes</code>, <code>_layouts</code>, <code>assets</code>, and <code>images</code>.</li>
-  <li>Clone the following files and personalize content as need: <code>about.md</code>, <code>articles.html</code>, <code>index.html</code>, <code>tags.html</code>, <code>feed.xml</code>, and <code>sitemap.xml</code>.</li>
-  <li>Set the following variables in your <code>config.yml</code> file:</li>
+  <li>Clone the following folders: <code class="highlighter-rouge">_includes</code>, <code class="highlighter-rouge">_layouts</code>, <code class="highlighter-rouge">assets</code>, and <code class="highlighter-rouge">images</code>.</li>
+  <li>Clone the following files and personalize content as need: <code class="highlighter-rouge">about.md</code>, <code class="highlighter-rouge">articles.html</code>, <code class="highlighter-rouge">index.html</code>, <code class="highlighter-rouge">tags.html</code>, <code class="highlighter-rouge">feed.xml</code>, and <code class="highlighter-rouge">sitemap.xml</code>.</li>
+  <li>Set the following variables in your <code class="highlighter-rouge">config.yml</code> file:</li>
 </ol>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span>            <span class="l l-Scalar l-Scalar-Plain">Site Title</span>
-<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span>      <span class="l l-Scalar l-Scalar-Plain">Site description for the metas.</span>
-<span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span>             <span class="l l-Scalar l-Scalar-Plain">site-logo.png</span>
-<span class="l l-Scalar l-Scalar-Plain">disqus_shortname</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">shortname</span>
-<span class="c1"># Assign a default image for your site&#39;s header and footer</span>
-<span class="l l-Scalar l-Scalar-Plain">default_bg</span><span class="p p-Indicator">:</span>       <span class="l l-Scalar l-Scalar-Plain">some-image.jpg</span>
-<span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>           <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">share</span><span class="p p-Indicator">:</span>            <span class="l l-Scalar l-Scalar-Plain">true</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">title</span><span class="pi">:</span>            <span class="s">Site Title</span>
+<span class="na">description</span><span class="pi">:</span>      <span class="s">Site description for the metas.</span>
+<span class="na">logo</span><span class="pi">:</span>             <span class="s">site-logo.png</span>
+<span class="na">disqus_shortname</span><span class="pi">:</span> <span class="s">shortname</span>
+<span class="c1"># Assign a default image for your site's header and footer</span>
+<span class="na">default_bg</span><span class="pi">:</span>       <span class="s">some-image.jpg</span>
+<span class="na">search</span><span class="pi">:</span>           <span class="no">true</span>
+<span class="na">share</span><span class="pi">:</span>            <span class="no">true</span>
 <span class="c1"># Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.</span>
-<span class="l l-Scalar l-Scalar-Plain">readtime</span><span class="p p-Indicator">:</span>         <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="na">readtime</span><span class="pi">:</span>         <span class="no">true</span>
 <span class="c1"># Turn on or off the fin animations in the header and footer</span>
-<span class="l l-Scalar l-Scalar-Plain">animated_fins</span><span class="p p-Indicator">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="na">animated_fins</span><span class="pi">:</span>    <span class="no">true</span>
 <span class="c1"># Specify the fin color in RGB value</span>
-<span class="l l-Scalar l-Scalar-Plain">fin_color</span><span class="p p-Indicator">:</span>        <span class="s">&quot;255,255,255&quot;</span>
+<span class="na">fin_color</span><span class="pi">:</span>        <span class="s2">"</span><span class="s">255,255,255"</span>
 <span class="c1"># Change url to your domain. Leave localhost server or blank when working locally.</span>
-<span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span>              <span class="s">&quot;http://localhost:4000&quot;</span>
+<span class="na">url</span><span class="pi">:</span>              <span class="s2">"</span><span class="s">http://localhost:4000"</span>
 
 
 <span class="c1"># Owner/author information</span>
-<span class="l l-Scalar l-Scalar-Plain">owner</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span>           <span class="l l-Scalar l-Scalar-Plain">Your Name</span>
-  <span class="l l-Scalar l-Scalar-Plain">avatar</span><span class="p p-Indicator">:</span>         <span class="l l-Scalar l-Scalar-Plain">your-photo.jpg</span>
-  <span class="l l-Scalar l-Scalar-Plain">email</span><span class="p p-Indicator">:</span>          <span class="l l-Scalar l-Scalar-Plain">your@email.com</span>
-  <span class="c1"># Use the coder&#39;s toolbox at http://coderstoolbox.net/string/#!encoding=xml&amp;action=encode&amp;charset=us_ascii to encode your description into XML string</span>
-  <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span>    <span class="l l-Scalar l-Scalar-Plain">Some Details about yourself</span>
+<span class="na">owner</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span>           <span class="s">Your Name</span>
+  <span class="na">avatar</span><span class="pi">:</span>         <span class="s">your-photo.jpg</span>
+  <span class="na">email</span><span class="pi">:</span>          <span class="s">your@email.com</span>
+  <span class="c1"># Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&amp;action=encode&amp;charset=us_ascii to encode your description into XML string</span>
+  <span class="na">description</span><span class="pi">:</span>    <span class="s">Some Details about yourself</span>
   <span class="c1"># Social networking links used in footer. Update and remove as you like.</span>
   <span class="c1"># To register at HMFAYSAL SOCIAL, visit http://social.hmfaysal.tk</span>
-  <span class="l l-Scalar l-Scalar-Plain">twitter</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">facebook</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">github</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">linkedin</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">instagram</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">tumblr</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">hmfaysalsocial</span><span class="p p-Indicator">:</span>
+  <span class="na">twitter</span><span class="pi">:</span>
+  <span class="na">facebook</span><span class="pi">:</span>
+  <span class="na">github</span><span class="pi">:</span>
+  <span class="na">linkedin</span><span class="pi">:</span>
+  <span class="na">instagram</span><span class="pi">:</span>
+  <span class="na">tumblr</span><span class="pi">:</span>
+  <span class="na">hmfaysalsocial</span><span class="pi">:</span>
   <span class="c1"># For Google Authorship https://plus.google.com/authorship</span>
-  <span class="l l-Scalar l-Scalar-Plain">google_plus</span><span class="p p-Indicator">:</span>    <span class="s">&quot;http://plus.google.com/123123123123132123&quot;</span>
+  <span class="na">google_plus</span><span class="pi">:</span>    <span class="s2">"</span><span class="s">http://plus.google.com/123123123123132123"</span>
 
 <span class="c1"># Analytics and webmaster tools stuff goes here</span>
-<span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span>
-<span class="l l-Scalar l-Scalar-Plain">google_verify</span><span class="p p-Indicator">:</span>
+<span class="na">google_analytics</span><span class="pi">:</span>
+<span class="na">google_verify</span><span class="pi">:</span>
 <span class="c1"># https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here</span>
-<span class="l l-Scalar l-Scalar-Plain">bing_verify</span><span class="p p-Indicator">:</span>
+<span class="na">bing_verify</span><span class="pi">:</span>
 
 <span class="c1"># Links to include in top navigation</span>
 <span class="c1"># For external links add external: true</span>
-<span class="l l-Scalar l-Scalar-Plain">links</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Home</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/</span>
-    <span class="l l-Scalar l-Scalar-Plain">external</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-    <span class="l l-Scalar l-Scalar-Plain">icon</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">home</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;i class=&quot;icon-book&quot;&gt;&lt;/i&gt; Documentation</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/documentation</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Categories</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/categories</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Tags</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/tags</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Faysal who?</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/hossain-mohd-faysal</span>
+<span class="na">links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Home</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">home</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">&lt;i class="icon-book"&gt;&lt;/i&gt; Documentation</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/documentation</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Categories</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/categories</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Tags</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/tags</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Faysal who?</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/hossain-mohd-faysal</span>
 
 <span class="c1"># http://en.wikipedia.org/wiki/List_of_tz_database_time_zones</span>
-<span class="l l-Scalar l-Scalar-Plain">timezone</span><span class="p p-Indicator">:</span>    <span class="l l-Scalar l-Scalar-Plain">America/New_York</span>
-<span class="l l-Scalar l-Scalar-Plain">future</span><span class="p p-Indicator">:</span>      <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">pygments</span><span class="p p-Indicator">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">markdown</span><span class="p p-Indicator">:</span>    <span class="l l-Scalar l-Scalar-Plain">kramdown</span>
-<span class="l l-Scalar l-Scalar-Plain">paginate</span><span class="p p-Indicator">:</span>    <span class="l l-Scalar l-Scalar-Plain">6</span>
-<span class="l l-Scalar l-Scalar-Plain">paginate_path</span><span class="p p-Indicator">:</span> <span class="s">&quot;page:num&quot;</span>
+<span class="na">timezone</span><span class="pi">:</span>    <span class="s">America/New_York</span>
+<span class="na">future</span><span class="pi">:</span>      <span class="no">true</span>
+<span class="na">pygments</span><span class="pi">:</span>    <span class="no">true</span>
+<span class="na">markdown</span><span class="pi">:</span>    <span class="s">kramdown</span>
+<span class="na">paginate</span><span class="pi">:</span>    <span class="s">6</span>
+<span class="na">paginate_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page:num"</span>
 
 <span class="c1"># https://github.com/mojombo/jekyll/wiki/Permalinks</span>
-<span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span>   <span class="l l-Scalar l-Scalar-Plain">/:categories/:title</span>
+<span class="na">permalink</span><span class="pi">:</span>   <span class="s">/:categories/:title</span>
 
-<span class="l l-Scalar l-Scalar-Plain">kramdown</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">auto_ids</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-  <span class="l l-Scalar l-Scalar-Plain">footnote_nr</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-  <span class="l l-Scalar l-Scalar-Plain">entity_output</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">as_char</span>
-  <span class="l l-Scalar l-Scalar-Plain">toc_levels</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1..6</span>
-  <span class="l l-Scalar l-Scalar-Plain">use_coderay</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">auto_ids</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">footnote_nr</span><span class="pi">:</span> <span class="s">1</span>
+  <span class="na">entity_output</span><span class="pi">:</span> <span class="s">as_char</span>
+  <span class="na">toc_levels</span><span class="pi">:</span> <span class="s">1..6</span>
+  <span class="na">use_coderay</span><span class="pi">:</span> <span class="no">false</span>
 
-  <span class="l l-Scalar l-Scalar-Plain">coderay</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">coderay_line_numbers</span><span class="p p-Indicator">:</span> 
-    <span class="l l-Scalar l-Scalar-Plain">coderay_line_numbers_start</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-    <span class="l l-Scalar l-Scalar-Plain">coderay_tab_width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">4</span>
-    <span class="l l-Scalar l-Scalar-Plain">coderay_bold_every</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
-    <span class="l l-Scalar l-Scalar-Plain">coderay_css</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">class</span></code></pre></figure>
+  <span class="na">coderay</span><span class="pi">:</span>
+    <span class="na">coderay_line_numbers</span><span class="pi">:</span> 
+    <span class="na">coderay_line_numbers_start</span><span class="pi">:</span> <span class="s">1</span>
+    <span class="na">coderay_tab_width</span><span class="pi">:</span> <span class="s">4</span>
+    <span class="na">coderay_bold_every</span><span class="pi">:</span> <span class="s">10</span>
+    <span class="na">coderay_css</span><span class="pi">:</span> <span class="s">class</span></code></pre></figure>
 
 <hr />
 
@@ -332,94 +332,94 @@ Description: Awesome dude, awesome life
 
 <p>A new blog post should have the following structure to utilise the themes functions</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="nn">---</span>
-<span class="l l-Scalar l-Scalar-Plain">layout</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">post</span>
-<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="s">&quot;Some</span><span class="nv"> </span><span class="s">Title&quot;</span><span class="err">					</span><span class="c1"># Title of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some description</span><span class="err">		</span><span class="l l-Scalar l-Scalar-Plain"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
-<span class="l l-Scalar l-Scalar-Plain">headline</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some headline</span><span class="err">				</span><span class="l l-Scalar l-Scalar-Plain"># Will appear in bold letters on top of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">modified</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span><span class="err">				</span><span class="l l-Scalar l-Scalar-Plain"># Date</span>
-<span class="l l-Scalar l-Scalar-Plain">category</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">personal</span>
-<span class="l l-Scalar l-Scalar-Plain">tags</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
-<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> 
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some-image.jpg</span>
-<span class="l l-Scalar l-Scalar-Plain">comments</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">mathjax</span><span class="p p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Some</span><span class="nv"> </span><span class="s">Title"</span><span class="err">					</span><span class="c1"># Title of the post</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Some description</span><span class="err">		</span><span class="s"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
+<span class="na">headline</span><span class="pi">:</span> <span class="s">Some headline</span><span class="err">				</span><span class="s"># Will appear in bold letters on top of the post</span>
+<span class="na">modified</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span><span class="err">				</span><span class="s"># Date</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">personal</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">image</span><span class="pi">:</span> 
+  <span class="na">feature</span><span class="pi">:</span> <span class="s">some-image.jpg</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">mathjax</span><span class="pi">:</span>
 <span class="nn">---</span></code></pre></figure>
 
 <p>A new status should have the following structure to utilise the themes functions</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="nn">---</span>
-<span class="l l-Scalar l-Scalar-Plain">layout</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">post</span>
-<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">status</span>                <span class="c1"># ! Important</span>
-<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="s">&quot;Some</span><span class="nv"> </span><span class="s">Title&quot;</span>         <span class="c1"># Title of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
-<span class="l l-Scalar l-Scalar-Plain">headline</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">modified</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span>        <span class="c1"># Date</span>
-<span class="l l-Scalar l-Scalar-Plain">category</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">personal</span>
-<span class="l l-Scalar l-Scalar-Plain">tags</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
-<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> 
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some-image.jpg</span>
-<span class="l l-Scalar l-Scalar-Plain">comments</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">mathjax</span><span class="p p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">status</span>                <span class="c1"># ! Important</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Some</span><span class="nv"> </span><span class="s">Title"</span>         <span class="c1"># Title of the post</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
+<span class="na">headline</span><span class="pi">:</span> <span class="s">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
+<span class="na">modified</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>        <span class="c1"># Date</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">personal</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">image</span><span class="pi">:</span> 
+  <span class="na">feature</span><span class="pi">:</span> <span class="s">some-image.jpg</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">mathjax</span><span class="pi">:</span>
 <span class="nn">---</span></code></pre></figure>
 
 <p>A new quotation post should have the following structure to utilise the themes functions</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="nn">---</span>
-<span class="l l-Scalar l-Scalar-Plain">layout</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">post</span>
-<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span>  <span class="l l-Scalar l-Scalar-Plain">quote</span>                <span class="c1"># ! Important</span>
-<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="s">&quot;Some</span><span class="nv"> </span><span class="s">Title&quot;</span>         <span class="c1"># Title of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
-<span class="l l-Scalar l-Scalar-Plain">headline</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">modified</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span>        <span class="c1"># Date</span>
-<span class="l l-Scalar l-Scalar-Plain">category</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">personal</span>
-<span class="l l-Scalar l-Scalar-Plain">tags</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
-<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> 
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some-image.jpg</span>
-<span class="l l-Scalar l-Scalar-Plain">comments</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">mathjax</span><span class="p p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">type</span><span class="pi">:</span>  <span class="s">quote</span>                <span class="c1"># ! Important</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Some</span><span class="nv"> </span><span class="s">Title"</span>         <span class="c1"># Title of the post</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
+<span class="na">headline</span><span class="pi">:</span> <span class="s">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
+<span class="na">modified</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>        <span class="c1"># Date</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">personal</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">image</span><span class="pi">:</span> 
+  <span class="na">feature</span><span class="pi">:</span> <span class="s">some-image.jpg</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">mathjax</span><span class="pi">:</span>
 <span class="nn">---</span></code></pre></figure>
 
 <p>A new video post should have the following structure to utilise the themes functions</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="nn">---</span>
-<span class="l l-Scalar l-Scalar-Plain">layout</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">post</span>
-<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span>  <span class="l l-Scalar l-Scalar-Plain">video</span>                <span class="c1"># ! Important</span>
-<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="s">&quot;Some</span><span class="nv"> </span><span class="s">Title&quot;</span>         <span class="c1"># Title of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
-<span class="l l-Scalar l-Scalar-Plain">headline</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">modified</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span>        <span class="c1"># Date</span>
-<span class="l l-Scalar l-Scalar-Plain">category</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">personal</span>
-<span class="l l-Scalar l-Scalar-Plain">tags</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
-<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> 
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some-image.jpg</span>
-<span class="l l-Scalar l-Scalar-Plain">comments</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">mathjax</span><span class="p p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">type</span><span class="pi">:</span>  <span class="s">video</span>                <span class="c1"># ! Important</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Some</span><span class="nv"> </span><span class="s">Title"</span>         <span class="c1"># Title of the post</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
+<span class="na">headline</span><span class="pi">:</span> <span class="s">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
+<span class="na">modified</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>        <span class="c1"># Date</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">personal</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">image</span><span class="pi">:</span> 
+  <span class="na">feature</span><span class="pi">:</span> <span class="s">some-image.jpg</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">mathjax</span><span class="pi">:</span>
 <span class="nn">---</span></code></pre></figure>
 
 <p>A new photo post should have the following structure to utilise the themes functions. By default, the featured image is shown on the blog index, but if you want to display another photo, you can choose to do so :)</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="nn">---</span>
-<span class="l l-Scalar l-Scalar-Plain">layout</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">post</span>
-<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span>  <span class="l l-Scalar l-Scalar-Plain">photo</span>                <span class="c1"># ! Important</span>
-<span class="l l-Scalar l-Scalar-Plain">photo</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some-image.jpg</span>     <span class="c1"># In case you do not want the featured image to display on the front page</span>
-<span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="s">&quot;Some</span><span class="nv"> </span><span class="s">Title&quot;</span>         <span class="c1"># Title of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
-<span class="l l-Scalar l-Scalar-Plain">headline</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
-<span class="l l-Scalar l-Scalar-Plain">modified</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span>        <span class="c1"># Date</span>
-<span class="l l-Scalar l-Scalar-Plain">category</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">personal</span>
-<span class="l l-Scalar l-Scalar-Plain">tags</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
-<span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> 
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">some-image2.jpg</span>
-<span class="l l-Scalar l-Scalar-Plain">comments</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="l l-Scalar l-Scalar-Plain">mathjax</span><span class="p p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">type</span><span class="pi">:</span>  <span class="s">photo</span>                <span class="c1"># ! Important</span>
+<span class="na">photo</span><span class="pi">:</span> <span class="s">some-image.jpg</span>     <span class="c1"># In case you do not want the featured image to display on the front page</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Some</span><span class="nv"> </span><span class="s">Title"</span>         <span class="c1"># Title of the post</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Some description</span>   <span class="c1"># Description of the post, used for Facebook Opengraph &amp; Twitter</span>
+<span class="na">headline</span><span class="pi">:</span> <span class="s">Some headline</span>       <span class="c1"># Will appear in bold letters on top of the post</span>
+<span class="na">modified</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>        <span class="c1"># Date</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">personal</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">image</span><span class="pi">:</span> 
+  <span class="na">feature</span><span class="pi">:</span> <span class="s">some-image2.jpg</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">mathjax</span><span class="pi">:</span>
 <span class="nn">---</span></code></pre></figure>
 
 <hr />
 
 <h2 id="folder-structure">Folder Structure</h2>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>HMFAYSAL-OMEGA-THEME
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">HMFAYSAL-OMEGA-THEME
 │
 │
 ├───assets
@@ -485,12 +485,12 @@ Description: Awesome dude, awesome life
 
 <h3 id="_configyml">_config.yml</h3>
 
-<p>Most of the variables found here are used in the .html files found in <code>_includes</code> if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. Links are absolute and prefixed with <code>{{ site.url }}</code> in the various <code>_includes</code> and <code>_layouts</code>, so remember to properly set <code>url</code><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> and use <code>http://localhost:4000</code> when developing locally or else the theme’s stylesheet and scripts won’t load.</p>
+<p>Most of the variables found here are used in the .html files found in <code class="highlighter-rouge">_includes</code> if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. Links are absolute and prefixed with <code class="highlighter-rouge">{{ site.url }}</code> in the various <code class="highlighter-rouge">_includes</code> and <code class="highlighter-rouge">_layouts</code>, so remember to properly set <code class="highlighter-rouge">url</code><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> and use <code class="highlighter-rouge">http://localhost:4000</code> when developing locally or else the theme’s stylesheet and scripts won’t load.</p>
 <h4 id="disqus-comments">Disqus Comments</h4>
 
-<p>Create a <a href="http://disqus.com">Disqus</a> account and change <code>disqus_shortname</code> in <code>_config.yml</code> to the Disqus <em>shortname</em> you just setup. To enable commenting on a post, add the following to its front matter:</p>
+<p>Create a <a href="http://disqus.com">Disqus</a> account and change <code class="highlighter-rouge">disqus_shortname</code> in <code class="highlighter-rouge">_config.yml</code> to the Disqus <em>shortname</em> you just setup. To enable commenting on a post, add the following to its front matter:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="l l-Scalar l-Scalar-Plain">comments</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">comments</span><span class="pi">:</span> <span class="no">true</span></code></pre></figure>
 
 <h4 id="default-background">Default Background</h4>
 
@@ -506,7 +506,7 @@ Description: Awesome dude, awesome life
 
 <h4 id="ownerauthor-information">Owner/Author Information</h4>
 
-<p>Change your name, and avatar photo (200x200 pixels or larger), email, and social networking urls. If you want to link to an external image on Gravatar or something similiar you’ll need to edit the path in <code>head.html</code> since it assumes it is located in <code>/images</code>.</p>
+<p>Change your name, and avatar photo (200x200 pixels or larger), email, and social networking urls. If you want to link to an external image on Gravatar or something similiar you’ll need to edit the path in <code class="highlighter-rouge">head.html</code> since it assumes it is located in <code class="highlighter-rouge">/images</code>.</p>
 
 <p>Including a link to your Google+ profile has the added benefit of displaying <a href="https://plus.google.com/authorship">Google Authorship</a> in Google search results if you’ve went ahead and applied for it.</p>
 
@@ -516,28 +516,28 @@ Description: Awesome dude, awesome life
 
 <h4 id="top-navigation-links">Top Navigation Links</h4>
 
-<p>Edit page/post titles and URLs to include in the site’s navigation. For external links add <code>external: true</code>.</p>
+<p>Edit page/post titles and URLs to include in the site’s navigation. For external links add <code class="highlighter-rouge">external: true</code>.</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="c1"># sample top navigation links</span>
-<span class="l l-Scalar l-Scalar-Plain">links</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Home</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/</span>
-    <span class="l l-Scalar l-Scalar-Plain">external</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-    <span class="l l-Scalar l-Scalar-Plain">icon</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">home</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;i class=&quot;icon-book&quot;&gt;&lt;/i&gt; Documentation</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/documentation</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Categories</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/categories</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Tags</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/tags</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Faysal who?</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/hossain-mohd-faysal</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># sample top navigation links</span>
+<span class="na">links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Home</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">home</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">&lt;i class="icon-book"&gt;&lt;/i&gt; Documentation</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/documentation</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Categories</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/categories</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Tags</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/tags</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Faysal who?</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/hossain-mohd-faysal</span></code></pre></figure>
 
 <h4 id="simple-search">Simple Search</h4>
 
-<p>Adding the following to <code>_config.yml</code> enables search using Christian Fei’s <a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple Jekyll jQuery plugin</a>. Clicking search will trigger a fullscreen overlay that searches post titles’ using an autogenerated JSON file.</p>
+<p>Adding the following to <code class="highlighter-rouge">_config.yml</code> enables search using Christian Fei’s <a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple Jekyll jQuery plugin</a>. Clicking search will trigger a fullscreen overlay that searches post titles’ using an autogenerated JSON file.</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">search</span><span class="pi">:</span> <span class="no">true</span></code></pre></figure>
 
 <figure>
   <img src="http://localhost:4000/images/simple-search-screenshot.jpg" alt="search screenshot" />
@@ -550,11 +550,11 @@ Description: Awesome dude, awesome life
 
 <h3 id="_includes">_includes</h3>
 
-<p>For the most part you can leave these as is since the author/owner details are pulled from <code>_config.yml</code>. That said you’ll probably want to customize the copyright stuff in <code>footer.html</code> to your liking.</p>
+<p>For the most part you can leave these as is since the author/owner details are pulled from <code class="highlighter-rouge">_config.yml</code>. That said you’ll probably want to customize the copyright stuff in <code class="highlighter-rouge">footer.html</code> to your liking.</p>
 
 <h3 id="adding-posts-and-pages">Adding Posts and Pages</h3>
 
-<p>There are two main content layouts: <code>post.html</code> (for posts) and <code>page.html</code> (for pages). Both have support for large <strong>feature images</strong> that span the full-width of the screen, and both are meant for text heavy blog posts (or articles).</p>
+<p>There are two main content layouts: <code class="highlighter-rouge">post.html</code> (for posts) and <code class="highlighter-rouge">page.html</code> (for pages). Both have support for large <strong>feature images</strong> that span the full-width of the screen, and both are meant for text heavy blog posts (or articles).</p>
 
 <h4 id="feature-images">Feature Images</h4>
 
@@ -562,21 +562,21 @@ Description: Awesome dude, awesome life
 
 <p>The two layouts make the assumption that the feature images live in the <em>images</em> folder. To add a feature image to a post or page just include the filename in the front matter like so.</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">feature-image-filename.jpg</span>
-  <span class="l l-Scalar l-Scalar-Plain">thumb</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">thumbnail-image.jpg</span> <span class="c1">#keep it square 200x200 px is good</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">image</span><span class="pi">:</span>
+  <span class="na">feature</span><span class="pi">:</span> <span class="s">feature-image-filename.jpg</span>
+  <span class="na">thumb</span><span class="pi">:</span> <span class="s">thumbnail-image.jpg</span> <span class="c1">#keep it square 200x200 px is good</span></code></pre></figure>
 
 <h4 id="categories">Categories</h4>
 
-<p>In the sample <code>_posts</code> folder you may have noticed <code>category: articles</code> in the front matter. I like keeping all posts grouped in the same folder. If you decide to rename or add categories you will need to modify the permalink in <code>articles.md</code> along with the filename (if renaming).</p>
+<p>In the sample <code class="highlighter-rouge">_posts</code> folder you may have noticed <code class="highlighter-rouge">category: articles</code> in the front matter. I like keeping all posts grouped in the same folder. If you decide to rename or add categories you will need to modify the permalink in <code class="highlighter-rouge">articles.md</code> along with the filename (if renaming).</p>
 
-<p>For example. Say you want to group all your posts under <code>blog/</code> instead of <code>articles/</code>. In your post add <code>category: blog</code> to the front matter, rename or duplicate <code>articles.md</code> to <code>blog.md</code> and change the permalink in that file to <code>permalink: /blog/index.html</code>.</p>
+<p>For example. Say you want to group all your posts under <code class="highlighter-rouge">blog/</code> instead of <code class="highlighter-rouge">articles/</code>. In your post add <code class="highlighter-rouge">category: blog</code> to the front matter, rename or duplicate <code class="highlighter-rouge">articles.md</code> to <code class="highlighter-rouge">blog.md</code> and change the permalink in that file to <code class="highlighter-rouge">permalink: /blog/index.html</code>.</p>
 
-<p>If done correctly <code>/blog</code> should be a page listing all the site’s posts.</p>
+<p>If done correctly <code class="highlighter-rouge">/blog</code> should be a page listing all the site’s posts.</p>
 
 <h4 id="postpage-thumbnails-for-og-and-twitter-cards">Post/Page Thumbnails for OG and Twitter Cards</h4>
 
-<p>Post and page thumbnails work the same way. These are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> meta tags found in <code>head.html</code>. If you don’t assign a thumbnail the image you assigned to <code>site.owner.avatar</code> in `_config.yml will be used.</p>
+<p>Post and page thumbnails work the same way. These are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> meta tags found in <code class="highlighter-rouge">head.html</code>. If you don’t assign a thumbnail the image you assigned to <code class="highlighter-rouge">site.owner.avatar</code> in `_config.yml will be used.</p>
 
 <p>Here’s an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post’s YAML.</p>
 
@@ -588,25 +588,25 @@ Description: Awesome dude, awesome life
 
 <p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
 
-<p>Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code>&lt;iframe&gt;</code> tags and remove <code>allowfullscreen</code>. Example below:</p>
+<p>Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code class="highlighter-rouge">&lt;iframe&gt;</code> tags and remove <code class="highlighter-rouge">allowfullscreen</code>. Example below:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;//www.youtube.com/embed/CQJByFp7H38&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"560"</span> <span class="na">height=</span><span class="s">"315"</span> <span class="na">src=</span><span class="s">"//www.youtube.com/embed/CQJByFp7H38"</span> <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span></code></pre></figure>
 
 <h4 id="social-share-links">Social Share Links</h4>
 
 <p>To enable Facebook, Twitter, and Google+ share links on a post or page, add the following to its front matter:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="l l-Scalar l-Scalar-Plain">share</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">share</span><span class="pi">:</span> <span class="no">true</span></code></pre></figure>
 
 <h4 id="twitter-cards">Twitter Cards</h4>
 
-<p>Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to <code>head.html</code> to support this, you just need to <a href="https://dev.twitter.com/docs/cards">validate and apply your domain</a> to turn it on.</p>
+<p>Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to <code class="highlighter-rouge">head.html</code> to support this, you just need to <a href="https://dev.twitter.com/docs/cards">validate and apply your domain</a> to turn it on.</p>
 
 <h4 id="error-404-page">Error 404 page</h4>
 
-<p>If you’re hosting your site with Github Pages, simply dropping the 404.html in the root folder will redirect all bad requests to this page. But if you’re hosting with some other provider, simply make a <code>.htaccess</code> file with the following code in it and drop it in the root folder.</p>
+<p>If you’re hosting your site with Github Pages, simply dropping the 404.html in the root folder will redirect all bad requests to this page. But if you’re hosting with some other provider, simply make a <code class="highlighter-rouge">.htaccess</code> file with the following code in it and drop it in the root folder.</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span><span class="l l-Scalar l-Scalar-Plain">ErrorDocument 404 /404.html</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">ErrorDocument 404 /404.html</span></code></pre></figure>
 
 <hr />
 
@@ -631,7 +631,7 @@ Description: Awesome dude, awesome life
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Used to generate absolute urls in <code>sitemap.xml</code>, <code>feed.xml</code>, and for canonical urls in <code>head.html</code>. Don’t include a trailing <code>/</code> in your base url ie: http://hmfaysal.github.io. When developing locally I suggest using <code>http://localhost:4000</code> or whatever server you’re using to properly load the theme’s stylesheet, scripts, and image assets. If you leave this variable blank all links will resolve correctly except those pointing home.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Used to generate absolute urls in <code class="highlighter-rouge">sitemap.xml</code>, <code class="highlighter-rouge">feed.xml</code>, and for canonical urls in <code class="highlighter-rouge">head.html</code>. Don’t include a trailing <code class="highlighter-rouge">/</code> in your base url ie: http://hmfaysal.github.io. When developing locally I suggest using <code class="highlighter-rouge">http://localhost:4000</code> or whatever server you’re using to properly load the theme’s stylesheet, scripts, and image assets. If you leave this variable blank all links will resolve correctly except those pointing home.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
