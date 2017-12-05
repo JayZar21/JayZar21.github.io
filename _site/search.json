@@ -3,7 +3,7 @@
 		{
 		  "title"      : "The Middle Way",
 		  "category"   : "",
-		  "url"        : "/personal/the-way",
+		  "url"        : "http://localhost:4000/personal/the-way",
 		  "date"       : "2015-03-01 00:00:00 +0100",
 		  "shortdate"  : "March 01, 2015"
 		} 

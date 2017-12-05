@@ -2,29 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Way of the coder</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2015-10-01T08:36:30+02:00</updated>
-<id>/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2017-12-05T08:16:56+01:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Gianluca Romanin</name>
-  <uri>/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>romaninz@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[The Middle Way]]></title>
-  <link>/personal/the-way</link>
-  <id>/personal/the-way</id>
+  <link>http://localhost:4000/personal/the-way</link>
+  <id>http://localhost:4000/personal/the-way</id>
   <published>2015-03-01T00:00:00+01:00</published>
   <updated>2015-03-01T00:00:00+01:00</updated>
   <author>
     <name>Gianluca Romanin</name>
-    <uri></uri>
+    <uri>http://localhost:4000</uri>
     <email>romaninz@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;I’m a software engineer and crafting software is also my real passion. &lt;/p&gt;
+  <content type="html">&lt;p&gt;I’m a software engineer and crafting software is also my real passion.&lt;/p&gt;
 
 &lt;p&gt;I’m very lucky: I have a wonderful
 family, a delightful wife, two beautiful daughters and I do what I like as an everyday job.
@@ -101,7 +101,7 @@ This is the difference between crashing into things and beeing part of them.&lt;
 &lt;small&gt;Me&lt;/small&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/personal/the-way&quot;&gt;The Middle Way&lt;/a&gt; was originally published by Gianluca Romanin at &lt;a href=&quot;&quot;&gt;Way of the coder&lt;/a&gt; on March 01, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/personal/the-way&quot;&gt;The Middle Way&lt;/a&gt; was originally published by Gianluca Romanin at &lt;a href=&quot;http://localhost:4000&quot;&gt;Way of the coder&lt;/a&gt; on March 01, 2015.&lt;/p&gt;</content>
 </entry>
 
 </feed>
