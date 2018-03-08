@@ -51,7 +51,7 @@ fields:
   label: Published
   type: boolean
   hidden: false
-  default: ''
+  default: false
 - name: date
   label: Date
   type: datetime
