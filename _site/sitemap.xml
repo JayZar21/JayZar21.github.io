@@ -13,6 +13,10 @@
     
     
     <url>
+        <loc>http://localhost:4000/software/controversy-of-a-backdoor</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/personal/the-way</loc>
     </url>
     
