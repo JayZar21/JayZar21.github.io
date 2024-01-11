@@ -1,4 +1,4 @@
-baseURL = 'https://jayzar21.github.io/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'The Way of the Coder'
 theme = 'beautifulhugo'
