@@ -1,4 +1,4 @@
-baseURL = 'https://jayzar21.github.io'
+baseURL = 'https://jayzar21.github.io/'
 languageCode = 'en-us'
 title = 'The Way of the Coder'
 theme = 'beautifulhugo'
@@ -9,6 +9,7 @@ pygmentsCodefencesGuessSyntax = true
 
 
 [Params]
+  selfHosted = false
   homeTitle = "No offense, no submission."
   #subtitle = "No offense, no submission."
   mainSections = ["post","posts"]
