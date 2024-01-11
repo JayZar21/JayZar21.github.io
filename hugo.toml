@@ -9,7 +9,6 @@ pygmentsCodefencesGuessSyntax = true
 
 
 [Params]
-  selfHosted = false
   homeTitle = "No offense, no submission."
   #subtitle = "No offense, no submission."
   mainSections = ["post","posts"]
