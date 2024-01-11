@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://jayzar21.github.io/'
 languageCode = 'en-us'
 title = 'The Way of the Coder'
 theme = 'beautifulhugo'
@@ -6,7 +6,8 @@ pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
-
+paginate = 20
+canonifyurls = true
 
 [Params]
   homeTitle = "No offense, no submission."
